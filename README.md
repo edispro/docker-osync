@@ -3,5 +3,5 @@
 Before runing the osync container you need to generate the ssh key (rsa for example) for each server.
 
 ### Syntax:
-      $ sudo docker run -d -v /root/.ssh:/root/.ssh -v /files-dir/:/data/ chelabim/docker-osync
+      $ sudo docker run -d -v /root/.ssh:/root/.ssh -v /files-dir/:/data/ edispro/docker-osync
       
