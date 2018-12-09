@@ -17,5 +17,6 @@ RUN ./install.sh --silent
 
 # Create volume data for osync initiator
 VOLUME /data
-
+RUN touch /var/log/osync.log 
+RUN chmod 777 /var/log/osync.log
 CMD /etc/init.d/osync-srv start && tail -f /var/log/osync.log 
